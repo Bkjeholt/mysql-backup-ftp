@@ -27,6 +27,7 @@ docker run -d \
            --restart=always \
            --name $DOCKER_CONTAINER_NAME \
            --link mysql-db-hic:mysql \
-           --vol .:/backup
+           —-vol .:/backup \
+           --env MYSQL_BACKUP_INTERVALL="12" \
            --env DOCKER_CONTAINER_NAME=${DOCKER_CONTAINER_NAME} \
            $DOCKER_IMAGE

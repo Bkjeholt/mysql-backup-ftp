@@ -1,6 +1,6 @@
 #!/bin/bash -f
 
 echo "------------------------------------------------------------------------"
-echo "-- Setup and initiate Create a file to the volume "
+echo "-- Setup and initiate Volume "
 echo "------------------------------------------------------------------------"
 
