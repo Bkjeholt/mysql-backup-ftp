@@ -28,6 +28,7 @@ docker run -d \
            --name $DOCKER_CONTAINER_NAME \
            --link mysql-db-hic:mysql \
            —-vol .:/backup \
+           --env FTP_HOST_ADDR="ftp.kjeholt.se" \
            --env MYSQL_BACKUP_INTERVALL="12" \
            --env DOCKER_CONTAINER_NAME=${DOCKER_CONTAINER_NAME} \
            $DOCKER_IMAGE
