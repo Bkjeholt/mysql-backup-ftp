@@ -14,11 +14,11 @@ echo "------------------------------------------------------------------------"
 cd /backup
 mv mysql-backup.tar ${FILE_NAME}
 
-ftp ${FTP_HOST_ADDR} <<END_FTP_SCRIPT
-user ${FTP_USER_NAME}
-${FTP_PASSWORD}
-cd ${EXTERNAL_PATH}
-put ${FILE_NAME}
+ftp -n ${FTP_HOST_ADDR} <<END_FTP_SCRIPT
+quote USER $FTP_USER_NAME
+quote PASS $FTP_PASSWORD
+cd $FTP_REMOTE_PATH
+put $FILE_NAME
 quit
 END_FTP_SCRIPT
 
