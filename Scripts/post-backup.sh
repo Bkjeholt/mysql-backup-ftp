@@ -12,7 +12,7 @@ echo "-- Upload the backup to volume "
 echo "------------------------------------------------------------------------"
 
 cd /backup
-mv mysql-backup.tar ${EXTERNAL_FILE_NAME}
+mv mysql-backup.tar ${FILE_NAME}
 
 ftp ${FTP_HOST_ADDR} <<END_FTP_SCRIPT
 user ${FTP_USER_NAME}
