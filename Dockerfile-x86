@@ -2,6 +2,8 @@ FROM bkjeholt/base-mydumper:dev-x86
 
 MAINTAINER Björn Kjeholt <dev@kjeholt.se>
 
+RUN apt-get install -y ftp
+
 ARG DOCKER_IMAGE_NAME
 ARG DOCKER_IMAGE_TAG
 
