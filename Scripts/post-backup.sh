@@ -1,6 +1,6 @@
 #!/bin/bash -f
 
-FILE_NAME=$(date +backup-%g%m%d-%H%M.tar
+FILE_NAME=$(date +backup-%g%m%d-%H%M.tar)
 DEFAULT_REMOTE_PATH=backup
 
 # FILE_NAME=${$FTP_BACKUP_FILENAME:-$DEFAULT_FILE_NAME}
