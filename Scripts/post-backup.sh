@@ -17,10 +17,10 @@ mv mysql-backup.tar ${FILE_NAME}
 
 ls -al
 
-ftp -n ${FTP_HOST_ADDR} <<END_FTP_SCRIPT
+ftp -np ${FTP_HOST_ADDR} <<END_FTP_SCRIPT
 quote USER $FTP_USER_NAME
 quote PASS $FTP_PASSWORD
-cd $FTP_REMOTE_PATH
+cd $DEFAULT_REMOTE_PATH
 put $FILE_NAME
 quit
 END_FTP_SCRIPT
